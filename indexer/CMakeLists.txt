@@ -8,12 +8,7 @@ install(TARGETS lsif-clang)
 
 set(CLANG_LIBS
   clangDaemonFork
-  clangAST
-  clangBasic
-  clangFrontend
-  clangIndex
-  clangLex
-  clangTooling
+  clang-cpp
   stdc++
 )
 

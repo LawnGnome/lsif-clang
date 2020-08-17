@@ -85,24 +85,11 @@ add_unittest(ClangdUnitTests ClangdTests
 
 clang_target_link_libraries(ClangdTests
   PRIVATE
-  clangAST
-  clangBasic
-  clangFormat
-  clangFrontend
-  clangIndex
-  clangLex
-  clangSema
-  clangSerialization
-  clangTooling
-  clangToolingCore
-  clangToolingInclusions
-  clangToolingRefactoring
-  clangToolingSyntax
+  clang-cpp
   )
 target_link_libraries(ClangdTests
   PRIVATE
-  clangDaemon
-  clangTidy
+  clang-cpp
   LLVMSupport
   LLVMTestingSupport
   )

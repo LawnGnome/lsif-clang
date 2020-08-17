@@ -26,11 +26,5 @@ add_clang_library(clangDaemonTweaks OBJECT
   SwapIfBranches.cpp
 
   LINK_LIBS
-  clangAST
-  clangBasic
-  clangDaemon
-  clangLex
-  clangToolingCore
-  clangToolingRefactoring
-  clangToolingSyntax
+  clang-cpp
   )

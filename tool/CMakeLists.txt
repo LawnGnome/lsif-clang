@@ -17,20 +17,10 @@ endif()
 
 clang_target_link_libraries(clangd
   PRIVATE
-  clangAST
-  clangBasic
-  clangFormat
-  clangFrontend
-  clangLex
-  clangSema
-  clangTooling
-  clangToolingCore
-  clangToolingRefactoring
-  clangToolingSyntax
+  clang-cpp
   )
 target_link_libraries(clangd
   PRIVATE
-  clangTidy
-  clangDaemon
+  clang-cpp
   ${CLANGD_XPC_LIBS}
   )
